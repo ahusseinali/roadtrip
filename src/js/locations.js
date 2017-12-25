@@ -1,2 +1,10 @@
 const chicago = {lat: 41.850033, lng: -87.6500523};
 const seattle = {lat: 47.608, lng: -122.335};
+const portTownsendWA = {lat: 48.12853, lng: -122.787936};
+const portAngelesWA = {lat: 48.118955, lng: -123.448343};
+const lakeCresentWA = {lat: 48.0582, lng: -123.8132};
+const straitJuanFucaWA = {lat: 48.2579, lng: -123.3605};
+const sapphoWA = {lat: 48.0701, lng: -124.2794};
+const clallamBayWA = {lat: 48.2533, lng: -124.2601};
+const neahBayWA = {lat: 48.3681, lng: -124.6250};
+const capeFlatteryWA = {lat: 48.3831, lng: -124.7144};

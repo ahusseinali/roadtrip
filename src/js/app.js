@@ -2,8 +2,13 @@ let directionsService;
 let directionsDisplay;
 
 function initMap() {
-  directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer;
+  directionsService = new google.maps.DirectionsService();
+  directionsDisplay = new google.maps.DirectionsRenderer({
+    polylineOptions: {
+      strokeColor: '#660000',
+      strokeWeight: 5,
+    },
+  });
   // Create a map object and specify the DOM element for display.
   const map = new google.maps.Map(document.getElementById('map'), {
     center: chicago,
@@ -11,19 +16,17 @@ function initMap() {
     styles: style,
   });
   directionsDisplay.setMap(map);
-  calculateAndDisplayRoute();
+  calculateAndDisplayRoute(pacificNorthWest);
 }
 
-function calculateAndDisplayRoute() {
-        var waypts = [
-          {location: 'chicago, il', stopover: true},
-          {location: 'portland, or', stopover: true},
-          {location: 'seattle ,wa', stopover: true},
-        ];
+const calculateAndDisplayRoute = (route) => {
+        var waypts = route.slice(1, route.length - 1).map((loc) => {
+          return {location: loc};
+        });
 
         directionsService.route({
-          origin: 'new york, ny',
-          destination: 'vancouver, bc',
+          origin: route[0],
+          destination: route[route.length - 1],
           waypoints: waypts,
           optimizeWaypoints: true,
           travelMode: 'DRIVING'
