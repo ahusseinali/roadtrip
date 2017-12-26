@@ -1,0 +1,14 @@
+{
+  "WA": {
+    "route": [
+      "portTownsendWA",
+      "portAngelesWA",
+      "lakeCresentWA",
+      "sapphoWA",
+      "clallamBayWA",
+      "neahBayWA",
+      "capeFlatteryWA"
+    ],
+    "name": "Pacific North West"
+  }
+}

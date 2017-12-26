@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": "portTownsendWA",
+      "name": "Port Townsend",
+      "location": {"lat": 48.12853, "lng": -122.787936},
+      "description": "Port Townsend WA"
+    }, {
+      "id": "portAngelesWA",
+      "name": "Port Angeles",
+      "location": {"lat": 48.118955, "lng": -123.448343},
+      "description": "Port Angeles WA"
+    }, {
+      "id": "lakeCresentWA",
+      "name": "Lake Cresent",
+      "location": {"lat": 48.0582, "lng": -123.8132},
+      "description": "Lake Cresent WA"
+    }, {
+      "id": "sapphoWA",
+      "name": "Sappho",
+      "location": {"lat": 48.0701, "lng": -124.2794},
+      "description": "Sappho WA"
+    }, {
+      "id": "clallamBayWA",
+      "name": "Clallam Bay",
+      "location": {"lat": 48.2533, "lng": -124.2601},
+      "description": "Clallam Bay WA"
+    }, {
+      "id": "neahBayWA",
+      "name": "Neah Bay",
+      "location": {"lat": 48.3681, "lng": -124.6250},
+      "description": "Neah Bay WA"
+    }, {
+      "id": "capeFlatteryWA",
+      "name": "Cape Flattery",
+      "location": {"lat": 48.3831, "lng": -124.7144},
+      "description": "Cape Flattery WA"
+    }
+  ]
+}
